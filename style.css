@@ -1,0 +1,288 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+	
+	
+}
+.show.menu{
+    max-height: 60px;
+}
+.nav-list{
+	width: 70%;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	/*background-color: black;*/
+}
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: large;
+}
+.nav-list li a:hover{
+	
+	color: rgb(34, 18, 204);
+	margin-left: 2px; 
+	transition: all 1s ease;
+	font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li{
+	list-style: none;
+	padding: 26px 30px;
+}
+.rightnav{
+	
+	width: 30%;
+
+	padding: 0 23px;
+}
+#search{
+	font-family: 'Ubuntu', sans-serif;
+	padding: 5px 12px;
+	font-size: 17px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+}
+
+.background{
+	background:rgba(0,0,0,0.7) url('img/food.jpg');
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+.box-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'Lemonada', cursive;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;	
+	transition:  ease-in-out;	
+}
+.firstsection{
+	height: 89.9vh;	
+	margin-bottom: 40px;
+}
+.firsthalf{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.secondhalf{
+	width: 30%;
+}
+.secondhalf img{
+	width: 85%;
+	padding: 4px 0;
+	border-radius: 60px;
+	display: block;
+	margin: auto;
+	margin-left: 38px;	
+}
+.text-big{
+	font-size: 41px;	
+}
+.text-small{
+	font-size: 18px;
+}
+.btn{
+	background-color: transparent;
+	color: aqua;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 18px;
+	margin: 7px 3px;
+	outline: none;
+	border:2px solid white;
+}
+.btan{
+	background-color: transparent;
+	color: white;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 18px;
+	margin: 7px 3px;
+	outline: none;
+	border:2px solid white;
+}
+.btn-sm{
+	padding: 6px 10px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.btn:hover,.btan:hover,.btn-sm:hover{
+	background-color:rgb(234, 237, 237);
+	color: rgb(15, 15, 15);
+	border:2px solid rgb(26, 25, 25);
+	transition: 1s ease;
+}
+
+.section{
+	font-family: 'Ubuntu', sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	max-width: 80%;
+	margin: auto;
+	margin-bottom: 72px;
+}
+.section-left{
+	flex-direction: row-reverse;
+}
+.thumbnail img{
+	width: 250px;
+	height: 150px;
+	border:1px solid black;
+	border-radius: 26px;
+	margin-top: 10px;
+}
+.food{
+	padding: 4px 4px;
+}
+.sectionsubTag{
+	font-family: 'Lemonada', cursive;
+	font-size: 12px;
+}
+
+#contact{
+	background-color:#ede8e3;
+	height: 133vh;
+}
+.textcenter{
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.form{
+	max-width: 500px;
+	margin: 0px auto;
+}
+.input{
+	width: 100%;
+	padding: 5px;
+	font-size: 1rem;
+	border:2px solid black;
+	border-radius: 6px;
+	margin: 22px 0;
+	padding: 3px 3px;
+	font-family: 'Lemonada', cursive;
+}
+.dark{
+	color: black;
+	border:2px solid black;
+	font-size: 0.8rem;
+	font-family: 'Lemonada', cursive;
+}
+#text{
+	height: 35vh;
+}
+.textfooter{
+	text-align: center;
+	padding: 30px 0px;
+	font-family: 'Ubuntu', sans-serif;
+	
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+.factory{
+	position: absolute;
+	cursor: pointer;
+	right: 5%;
+	top: 17px;
+	display: none;
+}
+.line{
+	width: 33px;
+	background-color: rgb(248, 243, 243);
+	height: 4px;
+	margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+	.nav-list{
+		flex-direction: column;
+	}
+	.navbar{
+		flex-direction: column;
+		height: 478px;
+		transition: all 0.7s ease-out;
+	}
+	.rightnav{
+		text-align: center;
+	}
+	#search{
+		font-family: 'Ubuntu', sans-serif;
+		width: 100%;
+	}
+	.box-main{
+		flex-direction: column-reverse;
+		max-width: 100%;	
+	}
+	.factory{
+		display: block;
+	}
+	.h-nav-resp{
+		height: 72px;	
+	}
+	.v-class-resp{
+		opacity: 0;
+	}
+	.secondhalf img{
+		width:104%;
+		margin-right: 20px;
+	}
+	.resp-p{
+		text-align: center;
+	}
+	.buttons{
+		text-align: center;
+	}
+	.section{
+		flex-direction: column-reverse;
+	}
+	.food{
+		padding: 0;
+	}
+	.thumbnail img{
+		width: 300px;
+		height: 250px;
+		margin-top:100px; 
+		margin-bottom: 30px;
+	}
+	.textfooter{
+		visibility: visible;
+	}
+	.sectionTag{
+		text-align: center;
+	}
+	#contact{
+		height: 67vh;
+	}
+}
+
+
+.navbar.scrolled {
+    background-color: rgba(255, 154, 40, 0.8); /* Change to desired color */
+    transition: background-color 0.5s ease;
+}
